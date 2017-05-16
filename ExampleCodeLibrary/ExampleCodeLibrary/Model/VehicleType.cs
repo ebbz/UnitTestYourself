@@ -1,4 +1,4 @@
-﻿namespace AwesomeCodeLibrary.Model
+﻿namespace ExampleCodeLibrary.Model
 {
     public enum VehicleType
     {

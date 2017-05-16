@@ -1,7 +1,7 @@
-﻿using AwesomeCodeLibrary.Repository;
-using AwesomeCodeLibrary.Model;
+﻿using ExampleCodeLibrary.Repository;
+using ExampleCodeLibrary.Model;
 
-namespace AwesomeCodeLibrary.Business.Implementations
+namespace ExampleCodeLibrary.Business.Implementations
 {
     public class ParkingBusiness : IParkingBusiness
     {

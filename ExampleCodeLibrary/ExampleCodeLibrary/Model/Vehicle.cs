@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AwesomeCodeLibrary.Model
+namespace ExampleCodeLibrary.Model
 {
     public abstract class Vehicle
     {

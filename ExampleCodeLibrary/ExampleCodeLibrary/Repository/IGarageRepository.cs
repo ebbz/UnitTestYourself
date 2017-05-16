@@ -1,7 +1,7 @@
-﻿using AwesomeCodeLibrary.Model;
+﻿using ExampleCodeLibrary.Model;
 using System.Collections.Generic;
 
-namespace AwesomeCodeLibrary.Repository
+namespace ExampleCodeLibrary.Repository
 {
     public interface IGarageRepository
     {
