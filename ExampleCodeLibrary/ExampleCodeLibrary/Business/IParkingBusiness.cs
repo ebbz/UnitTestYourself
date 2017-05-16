@@ -1,6 +1,6 @@
-﻿using AwesomeCodeLibrary.Model;
+﻿using ExampleCodeLibrary.Model;
 
-namespace AwesomeCodeLibrary.Business
+namespace ExampleCodeLibrary.Business
 {
     public interface IParkingBusiness
     {
