@@ -11,7 +11,7 @@ namespace ExampleCodeLibrary.Model
 
         private Vehicle() { }
 
-        public Vehicle(int topSpeed)
+        internal Vehicle(int topSpeed)
         {
             if (topSpeed <= 0)
                 throw new ArgumentOutOfRangeException(nameof(topSpeed), "Topspeed should be positive");
