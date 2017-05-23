@@ -41,6 +41,24 @@ namespace ExampleCodeLibraryTests
             Assert.Equal(vehicles.Count, result);
         }
 
+        [Theory]
+        [InlineData(0)]
+        [InlineData(1)]
+        [InlineData(5)]
+        public void Test_AmountOfVehicles_NoFixture(int amount)
+        {
+            var vehicles = new List<Vehicle>();
+            for (var i = 0; i < amount; i++)
+            {
+                vehicles.Add(new Car(amount));
+            }
+            _garageRepository.Setup(g => g.StoredVehicles()).Returns(vehicles);
+
+            var result = _parkingBusiness.AmountOfVehicles();
+
+            Assert.Equal(amount, result);
+        }
+
         [Fact]
         public void Test_AmountOfCars()
         {

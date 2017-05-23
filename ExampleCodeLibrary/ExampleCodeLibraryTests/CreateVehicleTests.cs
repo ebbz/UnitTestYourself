@@ -1,4 +1,5 @@
 ﻿using ExampleCodeLibrary.Model;
+using ExampleCodeLibraryTests.TestLists;
 using System;
 using Xunit;
 
@@ -15,6 +16,17 @@ namespace xUnitTests
 
             Assert.Equal(100m, speed1);
             Assert.Equal(76m, speed2);
+        }
+
+        [Theory]
+        [ClassData(typeof(VehicleAccelerateExceptionsList))]
+        public void Accelerate_Throws_Correct_Errors(decimal testSpeed, string error)
+        {
+            var car = new Car(200);
+
+            var exception = Assert.Throws<ArgumentOutOfRangeException>(() => car.Accelarate(testSpeed));
+
+            Assert.StartsWith(error, exception.Message);
         }
 
         [Theory]
